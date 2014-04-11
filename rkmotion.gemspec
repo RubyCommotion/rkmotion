@@ -13,9 +13,9 @@ Gem::Specification.new do |s|
   s.description   = 'A skeleton non-functioning placeholder W.I.P. RubyMotion wrapper for RestKit the Objective-C framework for iOS for interacting with Restful web services.'
   s.license       = 'MIT'
 
-  s.files         = Dir["lib/**/*"] + ["README.md"]
-  s.test_files    = Dir["spec/**/*"]
-  s.platform      = Gem::Platform::RUBY
+  s.files         = `git ls-files`.split($\).delete_if {|x| x.include? "example"}
+  s.test_files    = s.files.grep(%r{^(test|spec|features)/})
+  # s.platform      = Gem::Platform::RUBY
   s.require_paths = ['lib']
 
   s.add_dependency 'motion-cocoapods', '~> 1.4', '>= 1.4.0'
