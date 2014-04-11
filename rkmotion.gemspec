@@ -6,11 +6,11 @@ require File.expand_path('../lib/rkmotion/restkit/version', __FILE__)
 Gem::Specification.new do |s|
   s.name          = 'rkmotion'
   s.version       = RKMotion::RestKit::VERSION
-  s.authors       = ['Yaakov Gamliel', 'René Köcher', 'Dennis Major', 'Chris McKnight', 'Jack Watson-Hamblin']
+  s.authors       = ['Dennis Major']
   s.email         = ['dennismajor1@gmail.com']
   s.homepage      = "https://github.com/RubyCommotion/rkmotion"
   s.summary       = 'Provides a DSL for Obj-C RestKit'
-  s.description   = 'A RubyMotion wrapper for RestKit the Objective-C framework for iOS for interacting with Restful web services.'
+  s.description   = 'A skeleton non-functioning placeholder W.I.P. RubyMotion wrapper for RestKit the Objective-C framework for iOS for interacting with Restful web services.'
   s.license       = 'MIT'
 
   s.files         = Dir["lib/**/*"] + ["README.md"]
