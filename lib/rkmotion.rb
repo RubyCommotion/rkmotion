@@ -4,6 +4,6 @@ end
 
 lib_dir_path = File.dirname(File.expand_path(__FILE__))
 Motion::Project::App.setup do |app|
-  gem_files = Dir.glob(File.join(lib_dir_path, "motion/**/*.rb"))
+  gem_files = Dir.glob(File.join(lib_dir_path, 'rkmotion/**/*.rb'))
   app.files.unshift(gem_files).flatten!
 end

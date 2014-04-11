@@ -1,6 +1,6 @@
-module RcMotion
-  module RcRestKit
-    class RestFulHelpers
+module RKMotion
+  module RestKit
+    class RestfulHelpers
       attr_reader :an_attr_accessor
 
       def initialize

@@ -1,7 +1,7 @@
 # encoding: utf-8
 
-$:.unshift File.expand_path('../lib', __FILE__)
-require 'motion/restkit/version'
+# $:.unshift File.expand_path('../lib', __FILE__)
+require File.expand_path('../lib/rkmotion/restkit/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name          = 'rkmotion'
@@ -18,8 +18,8 @@ Gem::Specification.new do |s|
   s.platform      = Gem::Platform::RUBY
   s.require_paths = ['lib']
 
-  s.add_dependency "motion-cocoapods", "~> 1.4.0"
-  s.add_dependency "motion-require", ">= 0.2.0"
+  s.add_dependency 'motion-cocoapods', '~> 1.4', '>= 1.4.0'
+  s.add_dependency 'motion-require', '~> 0.2', '>= 0.2.0'
   s.rubyforge_project = '[none]'
-  s.add_development_dependency 'rake'
+  s.add_development_dependency 'rake', '~> 0'
 end
